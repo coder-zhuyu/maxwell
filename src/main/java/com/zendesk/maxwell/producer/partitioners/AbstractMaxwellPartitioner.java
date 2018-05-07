@@ -56,7 +56,7 @@ public abstract class AbstractMaxwellPartitioner {
 				if ( t == null && partitionByFallback == PartitionBy.DATABASE )
 					return r.getDatabase();
 				else
-					return t;
+					return t.toLowerCase();
 			case DATABASE:
 				return r.getDatabase();
 			case PRIMARY_KEY:
